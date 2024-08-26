@@ -1,3 +1,34 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error", // Evita el uso de any
+    "@typescript-eslint/explicit-module-boundary-types": "error", // Obliga a definir tipos en las funciones
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true, // Permite omitir el tipo de retorno en expresiones de función
+        "allowTypedFunctionExpressions": true // Permite tipos de retorno explícitos en expresiones de función
+      }
+    ],
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
+    "@typescript-eslint/typedef": [
+      "error",
+      {
+        "arrayDestructure": true,
+        "objectDestructure": true,
+        "parameter": true,
+        "propertyDeclaration": true,
+        "variableDeclaration": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "error", // Evita variables no usadas
+    "@typescript-eslint/no-non-null-assertion": "error" // Evita el uso de aserciones de no-null
+  }
 }
