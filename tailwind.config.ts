@@ -8,6 +8,7 @@ const config = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
+ 
   prefix: "",
   theme: {
     before:{
@@ -22,7 +23,7 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(to right top, #053726, #0b6045, #118b67, #14ba8b, #12ebb2)',
+        'custom-gradient': 'linear-gradient(to right top, #053726, #0b6045, #118b67, #13785e, #11624c)',
         'custom-gradientDark': 'linear-gradient(to right top, #06241a, #0a3729, #0e4c3a, #11624c, #13785e)',
         'welcomeLight': "url('/welcome1.jpg')",
         'welcomeDark': "url('/welcome3.jpg')",

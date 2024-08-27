@@ -1,0 +1,129 @@
+{
+    "en": {
+      "welcome": {
+        "title": "We Transform Ideas into Innovative Software Solutions",
+        "description": "At Code as Service, we turn your technological challenges into opportunities with our custom software solutions and expert consulting. From custom application development to technology optimization strategies, we're here to help you achieve success."
+      },
+      "navbar": {
+        "home": "HOME",
+        "services": "SERVICES",
+        "about": "ABOUT",
+        "contact": "CONTACT"
+      },
+      "newTech": {
+        "title": "NEW TECHNOLOGIES",
+        "content": {
+          "services1": {
+            "description": "Nowadays, having a website and using cloud services are essential for any business, regardless of its size. Recent statistics show a \nsignificant increase in the adoption of these services. \n\nIn 2022, spending on cloud infrastructure grew by 23%,\nreaching a total of $247.1 billion for the year, reflecting the \ngrowing dependence of businesses on these services for their daily \noperations.",
+            "button": "Explore Cloud Infrastructure"
+          },
+          "services2": {
+            "description": "Additionally, nearly 96% of companies use at least one public cloud service, and 84% use at least one private cloud service. The combination of these services is driving digital transformation, which many organizations consider essential for their success.\n\nThese figures highlight the importance of adopting advanced digital technologies such as websites and cloud computing to stay competitive and successful in today’s market.",
+            "button": "Explore Digital Transformation"
+          }
+        }
+      },
+      "servicesSection": {
+        "title": "Our Services",
+        "cards": [
+          {
+            "title": "Software Consulting",
+            "description": "We provide expert advice for optimizing and developing tailored software solutions.",
+            "button": "Contact Us"
+          },
+          {
+            "title": "Mobile Development",
+            "description": "Creation of native and cross-platform mobile apps to enhance your business's digital presence.",
+            "button": "Contact Us"
+          },
+          {
+            "title": "Sales Pages",
+            "description": "Development of optimized websites to boost conversions and sales of your products.",
+            "button": "Contact Us"
+          },
+          {
+            "title": "Software Solutions",
+            "description": "We develop any type of customized software according to your business's specific needs.",
+            "button": "Contact Us"
+          }
+        ]
+      },
+      "form": {
+        "title": "LET'S CONNECT WITH THE FUTURE",
+        "description": "Let's shape the future together. Reach out and let innovation guide our path forward.",
+        "fields": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "email": "Email",
+          "phoneNumber": "Phone Number",
+          "message": "Message"
+        },
+        "button": "Send it to the Future",
+        "quote": "The future has many names. For the weak, it is the unattainable. For the fearful, it is the unknown. For the brave, it is the opportunity. — Victor Hugo"
+      }
+    },
+    "es": {
+      "welcome": {
+        "title": "Transformamos Ideas en Soluciones de Software Innovadoras",
+        "description": "En Code as Service, convertimos tus desafíos tecnológicos en oportunidades con nuestras soluciones de software personalizadas y consultoría experta. Desde el desarrollo de aplicaciones a medida hasta estrategias de optimización tecnológica, estamos aquí para ayudarte a alcanzar el éxito."
+      },
+      "navbar": {
+        "home": "INICIO",
+        "services": "SERVICIOS",
+        "about": "NOSOTROS",
+        "contact": "CONTÁCTANOS"
+      },
+      "newTech": {
+        "title": "NUEVAS TECNOLOGÍAS",
+        "content": {
+          "services1": {
+            "description": "Hoy en día, tener un sitio web y usar servicios en la nube son esenciales para cualquier negocio, independientemente de su tamaño. Las estadísticas recientes muestran un \nincremento significativo en la adopción de estos servicios. \n\nEn 2022, el gasto en infraestructura en la nube creció un 23%,\nllegando a un total de 247.1 mil millones de dólares para el año, reflejando la \ndependencia creciente de las empresas en estos servicios para sus operaciones diarias.",
+            "button": "Explora La Infraestructura en la Nube"
+          },
+          "services2": {
+            "description": "Además, casi el 96% de las empresas utilizan al menos un servicio en la nube pública, y el 84% utiliza al menos un servicio en la nube privada. La combinación de estos servicios está impulsando la transformación digital, que muchas organizaciones consideran esencial para su éxito.\n\nEstas cifras destacan la importancia de adoptar tecnologías digitales avanzadas, como sitios web y computación en la nube, para mantenerse competitivo y exitoso en el mercado actual.",
+            "button": "Explora la Transformación Digital"
+          }
+        }
+      },
+      "servicesSection": {
+        "title": "Nuestros Servicios",
+        "cards": [
+          {
+            "title": "Consultoría de Software",
+            "description": "Proporcionamos asesoría experta para optimizar y desarrollar soluciones de software a medida.",
+            "button": "Contáctanos"
+          },
+          {
+            "title": "Desarrollo Móvil",
+            "description": "Creación de aplicaciones móviles nativas y multiplataforma para mejorar la presencia digital de tu negocio.",
+            "button": "Contáctanos"
+          },
+          {
+            "title": "Páginas de Ventas",
+            "description": "Desarrollo de sitios web optimizados para aumentar las conversiones y ventas de tus productos.",
+            "button": "Contáctanos"
+          },
+          {
+            "title": "Soluciones de Software",
+            "description": "Desarrollamos cualquier tipo de software personalizado según las necesidades específicas de tu negocio.",
+            "button": "Contáctanos"
+          }
+        ]
+      },
+      "form": {
+        "title": "CONÉCTATE CON EL FUTURO",
+        "description": "Formemos el futuro juntos. Contacta y deja que la innovación guíe nuestro camino hacia adelante.",
+        "fields": {
+          "firstName": "Primer Nombre",
+          "lastName": "Segundo Nombre",
+          "email": "Correo Electrónico",
+          "phoneNumber": "Número de Teléfono",
+          "message": "Mensaje"
+        },
+        "button": "Envíalo al Futuro",
+        "quote": "El futuro tiene muchos nombres. Para los débiles, es lo inalcanzable. Para los temerosos, es lo desconocido. Para los valientes, es la oportunidad. — Victor Hugo"
+      }
+    }
+  }
+  

@@ -1,8 +1,11 @@
 'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { TranslationMap } from "../app/interfaces";
 import { Switch } from "../components/ui/switch";
+import translate from "../translate.json";
 import {
   Select,
   SelectContent,
@@ -12,10 +15,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../components/ui/select";
-import { useTheme } from '../context/ThemeContext'; // Importar el hook de contexto
+import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../context/lenguageProvider';
 
 const NavBar = () => {
-  const { theme, toggleTheme } = useTheme(); // Usar el contexto del tema
+  const { theme, toggleTheme } = useTheme();
+  const { language, changeLanguage } = useLanguage(); // Usar el contexto de lenguaje
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -32,13 +37,13 @@ const NavBar = () => {
     const html = document.documentElement;
 
     if (isMenuOpen) {
-      html.style.overflow = "hidden"; // Desactiva el scroll y la interacción con el fondo
+      html.style.overflow = "hidden";
     } else {
-      html.style.overflow = ""; // Restablece la funcionalidad
+      html.style.overflow = "";
     }
 
     return () => {
-      html.style.overflow = ""; // Asegura que se restablezca cuando el componente se desmonte
+      html.style.overflow = "";
     };
   }, [isMenuOpen]);
 
@@ -48,7 +53,7 @@ const NavBar = () => {
       setTimeout(() => {
         setIsMenuOpen(false);
         setIsAnimating(false);
-      }, 500); // Duración de la animación
+      }, 500);
     } else {
       setIsMenuOpen(true);
     }
@@ -65,7 +70,6 @@ const NavBar = () => {
           className="ml-4"
         />
 
-        {/* Menú de hamburguesa para dispositivos móviles */}
         <div className="flex items-center md:hidden mr-4">
           <button
             className="focus:outline-none"
@@ -88,32 +92,31 @@ const NavBar = () => {
           </button>
         </div>
 
-        {/* Menú completo para pantallas grandes */}
         <div className="hidden md:flex h-full w-3/4 text-center items-center justify-end">
           <ul className="flex w-96 justify-evenly w-3/4 items-center">
             <li className="cursor-pointer hover:text-green-500 dark:hover:text-green-500 text-sm">
-              <Link href="/">HOME</Link>
+              <Link href="/">{translate[language].navbar.home}</Link>
             </li>
             <li className="cursor-pointer hover:text-green-500 dark:hover:text-green-500 text-sm">
-              <Link href="/services">SERVICES</Link>
+              <Link href="/services">{translate[language].navbar.services}</Link>
             </li>
             <li className="cursor-pointer hover:text-green-500 dark:hover:text-green-500 text-sm">
-              ABOUT
+              <Link href="/about">{translate[language].navbar.about}</Link>
             </li>
             <li className="cursor-pointer hover:text-green-500 dark:hover:text-green-500 text-sm">
-              CONTACT
+              <Link href="https://wa.me/50761259266">{translate[language].navbar.contact}</Link>
             </li>
           </ul>
           <div className="flex w-72 justify-around items-center">
-            <Select>
+            <Select onValueChange={(e) => changeLanguage(e as keyof TranslationMap)}>
               <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="Select a language" />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Languages</SelectLabel>
-                  <SelectItem value="english">English</SelectItem>
-                  <SelectItem value="spanish">Spanish</SelectItem>
+                  <SelectItem value="en">English</SelectItem>
+                  <SelectItem value="es">Español</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -123,7 +126,6 @@ const NavBar = () => {
         </div>
       </nav>
 
-      {/* Menú desplegable móvil */}
       <div
         className={`fixed top-16 left-0 w-full h-[calc(100%-4rem)] bg-white/20 dark:bg-slate-950/20 z-50 flex flex-col justify-center items-center backdrop-blur-lg transform transition-transform duration-500 ease-in-out ${
           isAnimating ? "animate-slide-out" : isMenuOpen ? "translate-x-0 opacity-100 animate-slide-in" : "translate-x-full opacity-0"
@@ -131,38 +133,37 @@ const NavBar = () => {
       >
         <ul className="flex flex-col items-center space-y-4">
           <li className="cursor-pointer hover:text-green-500 dark:hover:text-green-500 text-lg">
-            <Link href="/">HOME</Link>
+            <Link href="/">{translate[language].navbar.home}</Link>
           </li>
           <li className="cursor-pointer hover:text-green-500 dark:hover:text-green-500 text-lg">
-            <Link href="/services">SERVICES</Link>
+            <Link href="/services">{translate[language].navbar.services}</Link>
           </li>
           <li className="cursor-pointer hover:text-green-500 dark:hover:text-green-500 text-lg">
-            ABOUT
+            <Link href="/about">{translate[language].navbar.about}</Link>
           </li>
           <li className="cursor-pointer hover:text-green-500 dark:hover:text-green-500 text-lg">
-            CONTACT
+          {translate[language].navbar.contact}
+          </li>
+          <li className="cursor-pointer py-2">
+            <Switch onClick={toggleTheme}></Switch>
           </li>
           <li className="cursor-pointer w-full flex justify-center py-2">
-            <Select>
+            <Select onValueChange={(e) => changeLanguage(e as keyof TranslationMap)}>
               <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="Select a language" />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Languages</SelectLabel>
-                  <SelectItem value="english">English</SelectItem>
-                  <SelectItem value="spanish">Spanish</SelectItem>
+                  <SelectItem value="en">English</SelectItem>
+                  <SelectItem value="es">Español</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
           </li>
-          <li className="cursor-pointer py-2">
-            <Switch onClick={toggleTheme}></Switch>
-          </li>
         </ul>
       </div>
 
-      {/* Animaciones CSS */}
       <style jsx global>{`
         @keyframes slide-in {
           from {

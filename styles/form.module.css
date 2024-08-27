@@ -1,9 +1,13 @@
 /* form.module.css */
-.image-container {
+.imageContainer {
+    position: relative;
+  }
+  .imageContainer2 {
     position: relative;
   }
   
-  .image-container::before {
+  
+  .imageContainer::before {
     content: '"The future has many names. For the weak, it is the unattainable. For the fearful, it is the unknown. For the brave, it is the opportunity." — Victor Hugo'; 
     position: absolute;
     bottom: 0; /* Alinea el texto en la parte inferior */
@@ -19,6 +23,24 @@
     text-align: center; /* Centra el texto horizontalmente */
     border-radius: 12px;
   }
+
+  .imageContainer2::before {
+    content: '"El futuro tiene muchos nombres. Para los débiles, es lo inalcanzable. Para los temerosos, es lo desconocido. Para los valientes, es la oportunidad. — Victor Hugo'; 
+    position: absolute;
+    bottom: 0; /* Alinea el texto en la parte inferior */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Color y opacidad del overlay */
+    color: white; /* Color del texto */
+    font-size: 14px; /* Tamaño del texto pequeño */
+    padding: 10px; /* Espaciado interno para evitar que el texto esté pegado a los bordes */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho/alto */
+    z-index: 10;
+    pointer-events: none; /* Asegura que no interfiera con los clics */
+    text-align: center; /* Centra el texto horizontalmente */
+    border-radius: 12px;
+  }
+  
   
   .image {
     display: block; /* Asegura que la imagen se ajuste al contenedor */
