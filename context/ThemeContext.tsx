@@ -8,10 +8,8 @@ interface ThemeContextType {
   toggleTheme: () => void;
 }
 
-// Crear el contexto con un valor por defecto
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-// Proveedor del contexto
 interface ThemeProviderProps {
   children: ReactNode;
 }
@@ -20,7 +18,6 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
-    // Recuperar la preferencia del tema del almacenamiento local
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
     if (savedTheme) {
       setTheme(savedTheme);
@@ -36,7 +33,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     } else {
       body.classList.remove('dark');
     }
-    // Guardar la preferencia del tema en el almacenamiento local
+
     localStorage.setItem('theme', theme);
   }, [theme]);
 
@@ -51,7 +48,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   );
 };
 
-// Hook para usar el contexto
+
 export const useTheme = (): ThemeContextType => {
   const context = useContext(ThemeContext);
   if (context === undefined) {

@@ -9,5 +9,4 @@
   export interface TranslationMap {
     en: string;
     es: string;
-    // Agrega otros idiomas aquí
   }

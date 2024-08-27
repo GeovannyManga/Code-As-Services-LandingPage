@@ -7,7 +7,7 @@ import Form from "../components/Form";
 
 
 
-export default function Home(props: HomePage) {
+export default function Home() {
   return (
     <main className="min-h-screen min-w-screen">
       <NavBar></NavBar>

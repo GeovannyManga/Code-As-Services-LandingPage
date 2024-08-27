@@ -60,6 +60,16 @@
         },
         "button": "Send it to the Future",
         "quote": "The future has many names. For the weak, it is the unattainable. For the fearful, it is the unknown. For the brave, it is the opportunity. — Victor Hugo"
+      },
+      "about": {
+        "title": "About Code as Service",
+        "subtitle": "Empowering Businesses through Innovative Software Solutions",
+        "description": "At Code as Service, we are dedicated to providing top-notch software development and consulting services. Our team of experts is committed to delivering tailor-made solutions that meet the unique needs of each client. Whether you need custom software development, mobile app creation, or strategic consulting, we are here to help your business thrive in the digital age.",
+        "description2": "We believe in the power of innovation and strive to stay at the forefront of technology trends. Our mission is to empower businesses by offering scalable, efficient, and cutting-edge solutions that drive success. Join us on this journey and let's build the future together.",
+        "photoText1": "Expert Consulting",
+        "photoText2": "Tailored Development",
+        "question": "Ready to take your business to the next level?",
+        "link": "Contact Us Today!"
       }
     },
     "es": {
@@ -123,6 +133,16 @@
         },
         "button": "Envíalo al Futuro",
         "quote": "El futuro tiene muchos nombres. Para los débiles, es lo inalcanzable. Para los temerosos, es lo desconocido. Para los valientes, es la oportunidad. — Victor Hugo"
+      },
+      "about": {
+        "title": "Acerca de Code as Service",
+        "subtitle": "Empoderando Negocios a través de Soluciones de Software Innovadoras",
+        "description": "En Code as Service, nos dedicamos a ofrecer servicios de desarrollo y consultoría de software de primer nivel. Nuestro equipo de expertos está comprometido en proporcionar soluciones personalizadas que satisfagan las necesidades únicas de cada cliente. Ya sea que necesites desarrollo de software a medida, creación de aplicaciones móviles o consultoría estratégica, estamos aquí para ayudar a tu negocio a prosperar en la era digital.",
+        "description2": "Creemos en el poder de la innovación y nos esforzamos por estar a la vanguardia de las tendencias tecnológicas. Nuestra misión es empoderar a las empresas al ofrecer soluciones escalables, eficientes y de vanguardia que impulsen el éxito. Únete a nosotros en este viaje y construyamos el futuro juntos.",
+        "photoText1": "Consultoría Experta",
+        "photoText2": "Desarrollo a Medida",
+        "question": "¿Listo para llevar tu negocio al siguiente nivel?",
+        "link": "¡Contáctanos Hoy!"
       }
     }
   }
