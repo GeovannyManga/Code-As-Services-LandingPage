@@ -181,7 +181,7 @@ const Form = () => {
             onChange={handleChange}
             rows={4}
           />
-          <Button className="bg-teal-950 text-white">
+          <Button className="bg-teal-950 text-white dark:hover:text-black">
             {translate[language].form.button}
           </Button>
         </form>
